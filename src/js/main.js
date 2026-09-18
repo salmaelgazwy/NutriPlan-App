@@ -391,7 +391,56 @@ btnclear.addEventListener("click", function () {
       
       loggedMeals = [];
       localStorage.removeItem("recipekey");
+//calories
+ calpercent.innerHTML=`0%`
+   calbar.style.width = `0%`;
+    calbar.classList.remove("bg-red-500");
+    calbar.classList.add("bg-emerald-500");
 
+    calpercent.classList.remove("text-red-500");
+    calpercent.classList.add("text-emerald-600");
+
+    totalcall.classList.remove("text-red-500");
+    totalcall.classList.add("text-emerald-600");
+ 
+  totalcall.innerHTML=`${0} kcal`;
+  //protein
+   ptpercent.innerHTML=`0%`;
+  ptbar.style.width=`0%`;
+    ptpercent.classList.remove("text-red-500");
+    ptpercent.classList.add("text-blue-600");
+   ptbar.classList.remove("bg-red-500");
+  ptbar.classList.add("bg-blue-500");
+ totalpt.classList.remove("text-red-500");
+  totalpt.classList.add("text-blue-600");
+  totalcall.classList.remove("bg-red-500");
+  totalcall.classList.add("text-emerald-600");
+  totalpt.innerHTML=`${0}g`;
+  //carbs
+  carper.innerHTML=`0%`;
+  carbsbarlast.style.width=`0%`;
+   carper.classList.remove("text-red-500");
+    carper.classList.add("text-amber-600");
+    carbsbarlast.classList.remove("bg-red-500");
+   carbsbarlast.classList.add("bg-amber-500");
+ totalcarbs.classList.remove("text-red-500");
+ totalcarbs.classList.add("text-amber-600");
+ totalcarbs.innerHTML= `${0}g`;
+ //fats
+  fatper.innerHTML = `0%`;
+    fatbarlast.style.width = `0%`;
+    fatper.classList.remove("text-red-500");
+    fatper.classList.add("text-purple-600");
+
+    fatbarlast.classList.remove("bg-red-500");
+    fatbarlast.classList.add("bg-purple-500");
+
+    totalfatsss.classList.remove("text-red-500");
+    totalfatsss.classList.add("text-purple-600");
+    totalfatsss.innerHTML=`${0}g`;
+
+
+  
       
       loggeditemslist.innerHTML = `
         <div class="text-center py-8 text-gray-500">

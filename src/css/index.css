@@ -10,3 +10,11 @@
         transform: translateX(0);
     }
 }
+
+
+
+    /* proteincount*100)/50>=100)
+{
+
+  ptpercent.innerHTML=`100%`;
+  ptbar.style.width=`100%`; */
